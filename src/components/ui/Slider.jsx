@@ -1,4 +1,4 @@
-import { TypeAnimation } from "react-type-animation";
+// import { TypeAnimation } from "react-type-animation";
 import me from "../../assets/img/me.png";
 import laravel from "../../assets/img/laravel.jpg";
 import reactImg from "../../assets/img/react.jpg";
@@ -38,7 +38,7 @@ const Slider = () => {
                   <p className="text_second_slider ">
                     I develop websites using ...
                   </p>
-                  <TypeAnimation
+                  {/* <TypeAnimation
                     className="text-center"
                     sequence={[
                       "Laravel",
@@ -52,7 +52,7 @@ const Slider = () => {
                     ]}
                     wrapper="h1"
                     repeat={Infinity}
-                  />
+                  /> */}
 
                   <div className="text-center mt-4  position-relative">
                     <Link
