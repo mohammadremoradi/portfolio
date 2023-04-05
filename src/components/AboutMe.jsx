@@ -24,7 +24,7 @@ const AboutMe = () => {
         </div>
         <div className="container  pb-5">
           <div className="row">
-            <div className="px-2 col-md-6 position-relative ">
+            <div className="px-2 mb-5 col-md-6 position-relative ">
               <div className="about_img_border box">
                 <img src={aboutImg} alt="about me" className="img-fluid" />
               </div>

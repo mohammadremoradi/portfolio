@@ -1,4 +1,4 @@
-// import { TypeAnimation } from "react-type-animation";
+import { TypeAnimation } from "react-type-animation";
 import me from "../../assets/img/me.png";
 import laravel from "../../assets/img/laravel.jpg";
 import reactImg from "../../assets/img/react.jpg";
@@ -9,6 +9,8 @@ import { loadFull } from "tsparticles";
 import Particles from "react-particles";
 import { mouseArraction } from "../../assets/constants/particles";
 import { Link } from "react-router-dom";
+
+import resume from "../../assets/my-cv.pdf";
 const Slider = () => {
   const particleInit = useCallback(async (engine) => {
     await loadFull(engine);
@@ -38,7 +40,7 @@ const Slider = () => {
                   <p className="text_second_slider ">
                     I develop websites using ...
                   </p>
-                  {/* <TypeAnimation
+                  <TypeAnimation
                     className="text-center"
                     sequence={[
                       "Laravel",
@@ -52,14 +54,14 @@ const Slider = () => {
                     ]}
                     wrapper="h1"
                     repeat={Infinity}
-                  /> */}
+                  />
 
                   <div className="text-center mt-4  position-relative">
                     <Link
                       className="btn btn-danger py-3"
                       target="_blank"
                       download
-                      to="../../assets/my-cv.pdf"
+                      to={resume}
                     >
                       Download my resume
                     </Link>
